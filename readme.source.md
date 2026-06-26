@@ -330,16 +330,6 @@
  );
 })()
 ```
-
-## 🛠️ Selected Works & Projects
-
-| Project | Description | Tech Stack | Links |
-| :--- | :--- | :--- | :--- |
-| **Xiwat Watch Store** | A high-performance e-commerce frontend. Built complex state management logic to handle real-time product querying, dynamic filtering, and cart operations without relying on heavy external libraries. | `React` `JavaScript` `CSS Grid` `State Management` | [Live Demo](https://xiwat.vercel.app/) \| [Source Code](https://github.com/Xiao-Harsh/Xiwat) |
-| **Retrokey** | A technical logic and typing challenge application. Engineered the core application structure utilizing robust Java OOP principles and Garbage Collection. Optimized database interactions for seamless user state management. | `Java` `SQL` `OOP Architecture` `Data Structures` | [Source Code](https://github.com/Xiao-Harsh/RetroKey) |
-
----
-
 ## 📈 Journey Timeline
 
 ```
@@ -376,26 +366,10 @@
 />
 ```
 
-```aura width=110 height=44 link="https://github.com/Xiao-Harsh" inline align=center
-<SocialMediaButton
-  icon="https://cdn.simpleicons.org/github/white"
-  text="GitHub"
-  backgroundColor="#000000"
-  width={110}
-  height={44}
-  gradientStops={[
-    { offset: '0%', color: '#a78bfa' },
-    { offset: '30%', color: '#000000' },
-    { offset: '60%', color: '#8b5cf6' },
-    { offset: '80%', color: '#000000' },
-    { offset: '100%', color: '#6d28d9' },
-  ]}
-/>
-```
 
 ```aura width=130 height=44 link="https://www.instagram.com/im.harshsingh_?igsh=MW96bWFpc2FsNTUzOA==" inline align=center
 <SocialMediaButton
-  icon="https://cdn.simpleicons.org/instagram/E4405F"
+  icon="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/120px-Instagram_icon.png"
   text="Instagram"
   backgroundColor="#000000"
   width={130}
@@ -427,22 +401,6 @@
 />
 ```
 
-```aura width=120 height=44 link="https://codolio.com/profile/xiaoHarsh" inline align=center
-<SocialMediaButton
-  icon="https://xiao-harsh.github.io/Xiao-Harsh/codolio.svg"
-  text="Codolio"
-  backgroundColor="#000000"
-  width={120}
-  height={44}
-  gradientStops={[
-    { offset: '0%', color: '#fbbf24' },
-    { offset: '30%', color: '#000000' },
-    { offset: '60%', color: '#f59e0b' },
-    { offset: '80%', color: '#000000' },
-    { offset: '100%', color: '#d97706' },
-  ]}
-/>
-```
 
 ```aura width=110 height=44 link="mailto:harshu0631kumar@gmail.com" inline align=center
 <SocialMediaButton
@@ -461,21 +419,5 @@
 />
 ```
 
-```aura width=120 height=44 link="https://xiao-harsh.github.io/Xiao-Harsh/Resume.pdf" inline align=center
-<SocialMediaButton
-  icon="https://xiao-harsh.github.io/Xiao-Harsh/ico.png"
-  text="Resume"
-  backgroundColor="#000000"
-  width={120}
-  height={44}
-  gradientStops={[
-    { offset: '0%', color: '#34d399' },
-    { offset: '30%', color: '#000000' },
-    { offset: '60%', color: '#10b981' },
-    { offset: '80%', color: '#000000' },
-    { offset: '100%', color: '#047857' },
-  ]}
-/>
-```
 
 <p align="center"><sub>powered by <a href="https://github.com/collectioneur/readme-aura">readme-aura</a></sub></p>
