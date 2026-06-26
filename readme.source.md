@@ -330,12 +330,30 @@
  );
 })()
 ```
-```aura width=860 height=220
+```aura width=860 height=240
 (function() {
   var timeline = [
-    { year: '2024 – Present', title: 'B.Tech Computer Science', location: 'Greater Noida', color: '#60a5fa' },
-    { year: '2023', title: '12th Class', location: 'New Delhi', color: '#a78bfa' },
-    { year: '2021', title: '10th Class', location: 'New Delhi', color: '#34d399' },
+    { 
+      year: '2024 – Present', 
+      title: 'B.Tech Computer Science', 
+      institution: 'Galgotias University',
+      location: 'Greater Noida', 
+      color: '#60a5fa' 
+    },
+    { 
+      year: '2023', 
+      title: '12th Class', 
+      institution: 'Sarvodaya Bal Vidyalaya, Ashok Nagar',
+      location: 'New Delhi', 
+      color: '#a78bfa' 
+    },
+    { 
+      year: '2021', 
+      title: '10th Class', 
+      institution: 'Govt. Boys Senior Secondary School, Rajouri Garden',
+      location: 'New Delhi', 
+      color: '#34d399' 
+    },
   ];
 
   return (
@@ -363,7 +381,7 @@
         `}
       </style>
 
-      <svg width="860" height="220" style={{ position: 'absolute', top: 0, left: 0 }}>
+      <svg width="860" height="240" style={{ position: 'absolute', top: 0, left: 0 }}>
         <defs>
           <radialGradient id="g1" cx="50%" cy="50%" r="50%">
             <stop offset="0%" stopColor="rgba(0,185,240,0.50)" />
@@ -376,25 +394,25 @@
             <stop offset="70%" stopColor="rgba(85,15,175,0)" />
           </radialGradient>
         </defs>
-        <ellipse id="glow-1" cx="170" cy="200" rx="260" ry="170" fill="url(#g1)" />
-        <ellipse id="glow-2" cx="690" cy="210" rx="160" ry="110" fill="url(#g2)" />
+        <ellipse id="glow-1" cx="170" cy="220" rx="260" ry="170" fill="url(#g1)" />
+        <ellipse id="glow-2" cx="690" cy="230" rx="160" ry="110" fill="url(#g2)" />
       </svg>
 
       <div style={{ display:'flex', fontSize:10, fontWeight:700, color:'rgba(140,200,255,0.5)', letterSpacing:'3px' }}>
         JOURNEY TIMELINE
       </div>
 
-      <div style={{ display: 'flex', flexDirection: 'column', gap: 20, zIndex: 10, position: 'relative' }}>
+      <div style={{ display: 'flex', flexDirection: 'column', gap: 16, zIndex: 10, position: 'relative' }}>
         {timeline.map(function(item, index) {
           return (
-            <div key={item.year} style={{ display: 'flex', alignItems: 'center', position: 'relative' }}>
+            <div key={item.year} style={{ display: 'flex', alignItems: 'flex-start', position: 'relative', minHeight: 40 }}>
               {/* Vertical Connector Line */}
               {index < timeline.length - 1 && (
                 <div style={{
                   position: 'absolute',
                   left: 155,
-                  top: 16,
-                  bottom: -28,
+                  top: 14,
+                  bottom: -22,
                   width: 2,
                   background: 'linear-gradient(to bottom, ' + item.color + ', ' + timeline[index + 1].color + ')',
                   opacity: 0.3
@@ -408,7 +426,8 @@
                 fontSize: 14,
                 fontWeight: 800,
                 color: item.color,
-                letterSpacing: '0.5px'
+                letterSpacing: '0.5px',
+                lineHeight: '20px'
               }}>
                 {item.year}
               </div>
@@ -421,17 +440,18 @@
                 background: item.color,
                 marginLeft: 20,
                 marginRight: 24,
+                marginTop: 4,
                 boxShadow: '0 0 10px ' + item.color,
                 zIndex: 2
               }} />
 
               {/* Content */}
-              <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
-                <div style={{ fontSize: 14, fontWeight: 700, color: '#ffffff' }}>
-                  {item.title}
+              <div style={{ display: 'flex', flexDirection: 'column', gap: 2, lineHeight: '20px' }}>
+                <div style={{ display: 'flex', fontSize: 14, fontWeight: 700, color: '#ffffff' }}>
+                  {item.title} <span style={{ color: 'rgba(255,255,255,0.45)', fontWeight: 500, fontSize: 13 }}>@ {item.institution}</span>
                 </div>
-                <div style={{ fontSize: 12, color: 'rgba(255,255,255,0.4)', fontWeight: 500, display: 'flex', alignItems: 'center' }}>
-                  📍 {item.location}
+                <div style={{ fontSize: 12, color: 'rgba(255,255,255,0.4)', fontWeight: 500 }}>
+                  {'📍 ' + item.location}
                 </div>
               </div>
             </div>
