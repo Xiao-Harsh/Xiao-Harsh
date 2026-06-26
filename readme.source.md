@@ -429,7 +429,7 @@
 
 ```aura width=120 height=44 link="https://codolio.com/profile/xiaoHarsh" inline align=center
 <SocialMediaButton
-  icon="https://xiao-harsh.github.io/Portfolio/codolio.svg"
+  icon="https://xiao-harsh.github.io/Xiao-Harsh/codolio.svg"
   text="Codolio"
   backgroundColor="#000000"
   width={120}
@@ -461,9 +461,9 @@
 />
 ```
 
-```aura width=120 height=44 link="https://xiao-harsh.github.io/Portfolio/Resume.pdf" inline align=center
+```aura width=120 height=44 link="https://xiao-harsh.github.io/Xiao-Harsh/Resume.pdf" inline align=center
 <SocialMediaButton
-  icon="https://xiao-harsh.github.io/Portfolio/ico.png"
+  icon="https://xiao-harsh.github.io/Xiao-Harsh/ico.png"
   text="Resume"
   backgroundColor="#000000"
   width={120}
