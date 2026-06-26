@@ -112,7 +112,7 @@
       {'Aspiring Software Engineer'}
     </div>
     <div style={{ display:'flex', gap:8, marginTop:6 }}>
-      {['Java', 'C', '5+ Hackathons', 'DSA (170+ Solved)', '2+ Years Coding'].map(function(tag) {
+      {['Java', '5+ Hackathons', 'DSA (170+ Solved)', '2+ Years Coding'].map(function(tag) {
         return (
           <div key={tag} style={{
             display:'flex', padding:'4px 12px', borderRadius:20,
@@ -342,9 +342,6 @@
 🏫 2021 - 10th Class @ Govt. Boys Senior Secondary School, Rajouri Garden, New Delhi
          Laying down coding foundations.
 ```
-
-- **Stats**: 2+ Years Coding | 5+ Hackathons | 170+ DSA Solved Problems
-
 ---
 
 ## 🌐 Let's Connect
