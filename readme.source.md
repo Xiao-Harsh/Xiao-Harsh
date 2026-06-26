@@ -447,11 +447,11 @@
 
               {/* Content */}
               <div style={{ display: 'flex', flexDirection: 'column', gap: 2, lineHeight: '20px' }}>
-                <div style={{ display: 'flex', fontSize: 14, fontWeight: 700, color: '#ffffff' }}>
-                  {item.title} <span style={{ color: 'rgba(255,255,255,0.45)', fontWeight: 500, fontSize: 13 }}>@ {item.institution}</span>
+                <div style={{ display: 'flex', fontSize: 14, fontWeight: 700, color: '#ffffff', flexWrap: 'wrap', gap: 6 }}>
+                  {item.title} <span style={{ color: 'rgba(255,255,255,0.7)', fontWeight: 500, fontSize: 13 }}>| {item.institution}</span>
                 </div>
-                <div style={{ fontSize: 12, color: 'rgba(255,255,255,0.4)', fontWeight: 500 }}>
-                  {'📍 ' + item.location}
+                <div style={{ fontSize: 12, color: 'rgba(255,255,255,0.5)', fontWeight: 500 }}>
+                  {item.location}
                 </div>
               </div>
             </div>
