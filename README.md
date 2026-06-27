@@ -14,4 +14,3 @@
 <a href="https://www.linkedin.com/in/harsh-kumar06newdelhi/"><img src="./.github/assets/readme-aura-component-4-aac5f8dd.svg" width="120" height="44" /></a><a href="https://www.instagram.com/im.harshsingh_?igsh=MW96bWFpc2FsNTUzOA=="><img src="./.github/assets/readme-aura-component-5-b9a2c6e0.svg" width="130" height="44" /></a><a href="https://x.com/imharshsingh_"><img src="./.github/assets/readme-aura-component-6-9e26f53a.svg" width="110" height="44" /></a><a href="https://codolio.com/profile/xiaoHarsh"><img src="./.github/assets/readme-aura-component-7-40a375e0.svg" width="120" height="44" /></a><a href="https://github.com/xiao-harsh"><img src="./.github/assets/readme-aura-component-8-b48adf97.svg" width="110" height="44" /></a>
 </p>
 
-<p align="center"><sub>powered by <a href="https://github.com/collectioneur/readme-aura">readme-aura</a></sub></p>
