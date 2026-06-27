@@ -130,7 +130,7 @@
 (function() {
  var stats = [
    { label: 'Repos', value: String(github.stats.totalRepos), color: '#60a5fa' },
-   { label: 'Stars', value: String(github.stats.totalStars), color: '#a78bfa' },
+   { label: 'Active Days', value: String(Math.floor((new Date() - new Date(github.user.createdAt)) / (1000 * 60 * 60 * 24))), color: '#a78bfa' },
    { label: 'Commits', value: String(github.stats.totalCommits), color: '#34d399' },
  ];
 
