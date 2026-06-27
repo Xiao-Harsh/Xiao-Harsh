@@ -26,6 +26,6 @@ jobs:
           source: readme.source.md
           output: README.md
           assets_dir: .github/assets
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          github_token: ${{ secrets.AURA_TOKEN || secrets.GITHUB_TOKEN }}
           auto_commit: 'true'
           commit_message: 'generate README via readme-aura'

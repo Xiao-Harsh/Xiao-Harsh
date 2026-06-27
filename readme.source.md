@@ -101,7 +101,7 @@
     borderRadius: 48, background: 'linear-gradient(135deg, #00b9f0, #6622ee)',
     display: 'flex', alignItems: 'center', justifyContent: 'center',
   }}>
-    <img src={github.user.avatarUrl} width={88} height={88} style={{ borderRadius: 44 }} />
+    <img src={github.user.avatarUrl + (github.user.avatarUrl.includes('?') ? '&' : '?') + 't=' + new Date().getTime()} width={88} height={88} style={{ borderRadius: 44 }} />
   </div>
 
   <div style={{ display:'flex', flexDirection:'column', marginLeft:168, gap:8, zIndex: 10 }}>
