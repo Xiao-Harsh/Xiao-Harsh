@@ -20,6 +20,9 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
+      - name: Fetch Real GitHub Stats
+        run: node scripts/fetch_stats.js
+
       - name: Generate README
         uses: collectioneur/readme-aura@main
         with:
