@@ -130,7 +130,7 @@
 (function() {
   var stats = [
     { label: 'Repos', value: '{{REPOS}}', color: '#60a5fa' },
-    { label: 'Active Days', value: '{{ACTIVE_DAYS}}', color: '#a78bfa' },
+    { label: 'Account Age', value: '{{ACTIVE_DAYS}}', color: '#a78bfa' },
     { label: 'Commits', value: '{{COMMITS}}', color: '#34d399' },
   ];
 
