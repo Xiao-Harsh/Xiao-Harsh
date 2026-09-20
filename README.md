@@ -11,7 +11,7 @@
 ## 🌐 Let's Connect
 
 <p align="center">
-<a href="https://www.linkedin.com/in/harsh-kumar06newdelhi/"><img src="./.github/assets/readme-aura-component-4-9f54a979.svg" width="136" height="44" /></a><a href="https://x.com/imharshsingh_"><img src="./.github/assets/readme-aura-component-5-7da2d57c.svg" width="126" height="44" /></a><a href="https://codolio.com/profile/xiaoHarsh"><img src="./.github/assets/readme-aura-component-6-ac9d4678.svg" width="136" height="44" /></a><a href="https://www.instagram.com/im.harshsingh_?igsh=MW96bWFpc2FsNTUzOA=="><img src="./.github/assets/readme-aura-component-7-5cb5234a.svg" width="146" height="44" /></a>
+<a href="https://www.linkedin.com/in/harsh-kumar06newdelhi/"><img src="./.github/assets/readme-aura-component-4-aac5f8dd.svg" width="120" height="44" /></a><img src="./.github/assets/readme-aura-component-5-c5641ef4.svg" width="16" height="44" /><a href="https://x.com/imharshsingh_"><img src="./.github/assets/readme-aura-component-6-9e26f53a.svg" width="110" height="44" /></a><img src="./.github/assets/readme-aura-component-7-c5641ef4.svg" width="16" height="44" /><a href="https://codolio.com/profile/xiaoHarsh"><img src="./.github/assets/readme-aura-component-8-40a375e0.svg" width="120" height="44" /></a><img src="./.github/assets/readme-aura-component-9-c5641ef4.svg" width="16" height="44" /><a href="https://www.instagram.com/im.harshsingh_?igsh=MW96bWFpc2FsNTUzOA=="><img src="./.github/assets/readme-aura-component-10-11051c80.svg" width="130" height="44" /></a>
 </p>
 
 <!-- build trigger -->
