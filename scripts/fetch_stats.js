@@ -38,9 +38,15 @@ async function fetchStats() {
     const sourcePath = path.join(__dirname, '..', 'readme.source.md');
     let content = fs.readFileSync(sourcePath, 'utf8');
     
+    // Support template placeholders
     content = content.replace('{{REPOS}}', String(repos));
     content = content.replace('{{ACTIVE_DAYS}}', String(activeDays));
     content = content.replace('{{COMMITS}}', String(commits));
+    
+    // Also support updating existing literal values via regex
+    content = content.replace(/(\{\s*label:\s*['"]Repos['"],\s*value:\s*['"])[^'"]*(['"])/, `$1${repos}$2`);
+    content = content.replace(/(\{\s*label:\s*['"]Account Age['"],\s*value:\s*['"])[^'"]*(['"])/, `$1${activeDays}$2`);
+    content = content.replace(/(\{\s*label:\s*['"]Commits['"],\s*value:\s*['"])[^'"]*(['"])/, `$1${commits}$2`);
     
     fs.writeFileSync(sourcePath, content, 'utf8');
     console.log("readme.source.md updated successfully!");
@@ -52,11 +58,12 @@ async function fetchStats() {
     
     const sourcePath = path.join(__dirname, '..', 'readme.source.md');
     let content = fs.readFileSync(sourcePath, 'utf8');
-    content = content.replace('{{REPOS}}', "8");
+    content = content.replace('{{REPOS}}', "10");
     content = content.replace('{{ACTIVE_DAYS}}', String(activeDays));
-    content = content.replace('{{COMMITS}}', "51");
+    content = content.replace('{{COMMITS}}', "103");
+    content = content.replace(/(\{\s*label:\s*['"]Account Age['"],\s*value:\s*['"])[^'"]*(['"])/, `$1${activeDays}$2`);
     fs.writeFileSync(sourcePath, content, 'utf8');
-    console.log(`Fell back to default stats (Repos=8, Commits=51) but updated Active Days to dynamic value: ${activeDays}`);
+    console.log(`Fell back to default stats but updated Active Days to dynamic value: ${activeDays}`);
   }
 }
 
