@@ -8,6 +8,7 @@ on:
       - 'readme.source.md'
       - '.github/workflows/readme-aura.yml'
       - 'scripts/**'
+      - 'assets/**'
   schedule:
     - cron: '0 6 * * *' # Updates stats every day at 6:00 AM UTC
   workflow_dispatch:

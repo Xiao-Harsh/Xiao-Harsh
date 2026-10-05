@@ -52,18 +52,16 @@ async function fetchStats() {
     console.log("readme.source.md updated successfully!");
   } catch (err) {
     console.error("Failed to fetch GitHub stats:", err);
-    // Fallback to safe defaults but keep activeDays dynamic if network request fails
+    // Keep activeDays dynamic and preserve current repos/commits without regressing
     const createdAt = "2024-11-12T14:11:23Z";
     const activeDays = Math.floor((new Date() - new Date(createdAt)) / (1000 * 60 * 60 * 24));
     
     const sourcePath = path.join(__dirname, '..', 'readme.source.md');
     let content = fs.readFileSync(sourcePath, 'utf8');
-    content = content.replace('{{REPOS}}', "10");
     content = content.replace('{{ACTIVE_DAYS}}', String(activeDays));
-    content = content.replace('{{COMMITS}}', "103");
     content = content.replace(/(\{\s*label:\s*['"]Account Age['"],\s*value:\s*['"])[^'"]*(['"])/, `$1${activeDays}$2`);
     fs.writeFileSync(sourcePath, content, 'utf8');
-    console.log(`Fell back to default stats but updated Active Days to dynamic value: ${activeDays}`);
+    console.log(`Updated dynamic Active Days to ${activeDays} (preserved current repos and commits).`);
   }
 }
 
