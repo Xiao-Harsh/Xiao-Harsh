@@ -22,7 +22,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
-          token: ${{ secrets.AURA_TOKEN || secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Fetch Real GitHub Stats
         env:
@@ -38,7 +38,7 @@ jobs:
           source: readme.source.md
           output: README.md
           assets_dir: .github/assets
-          github_token: ${{ secrets.AURA_TOKEN || secrets.GITHUB_TOKEN }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
           auto_commit: 'true'
           commit_message: 'generate README via readme-aura'
 
