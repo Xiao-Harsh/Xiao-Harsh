@@ -130,8 +130,8 @@
 (function() {
   var stats = [
     { label: 'Repos', value: '12', color: '#60a5fa' },
-    { label: 'Account Age', value: '693', color: '#a78bfa' },
-    { label: 'Commits', value: '123', color: '#34d399' },
+    { label: 'Account Age', value: '694', color: '#a78bfa' },
+    { label: 'Commits', value: '127', color: '#34d399' },
   ];
 
  return (
