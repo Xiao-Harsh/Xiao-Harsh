@@ -129,9 +129,9 @@
 ```aura width=860 height=140
 (function() {
   var stats = [
-    { label: 'Repos', value: '13', color: '#60a5fa' },
-    { label: 'Account Age', value: '713', color: '#a78bfa' },
-    { label: 'Commits', value: '137', color: '#34d399' },
+    { label: 'Repos', value: '12', color: '#60a5fa' },
+    { label: 'Account Age', value: '714', color: '#a78bfa' },
+    { label: 'Commits', value: '143', color: '#34d399' },
   ];
 
  return (
