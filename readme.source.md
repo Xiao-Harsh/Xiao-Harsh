@@ -385,41 +385,15 @@
         </g>
      </svg>
 
-     <div style={{ display:'flex', alignItems:'center', gap:8, marginBottom:2 }}>
-       <div style={{ display:'flex', fontSize:13, fontWeight:800, color:'#c084fc' }}>
-         &lt;/&gt;
-       </div>
-       <div style={{ width:1, height:14, background:'rgba(140,200,255,0.25)', margin:'0 4px' }} />
-       <div style={{ display:'flex', fontSize:10, fontWeight:700, color:'rgba(140,200,255,0.6)', letterSpacing:'3px' }}>
-         TECH STACK & SKILLS
-       </div>
+     <div style={{ display:'flex', fontSize:10, fontWeight:700, color:'rgba(140,200,255,0.5)', letterSpacing:'3px' }}>
+       TECH STACK & SKILLS
      </div>
-     <div style={{ display:'flex', flexDirection:'column', gap:12 }}>
+     <div style={{ display:'flex', flexDirection:'column', gap:14 }}>
        {categories.map(function(cat) {
          return (
            <div key={cat.title} style={{ display:'flex', alignItems:'center', gap:14 }}>
-             <div style={{ display:'flex', alignItems:'center', width:116 }}>
-               {cat.title === 'Languages' && (
-                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#60a5fa" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" style={{ marginRight:7 }}>
-                   <polyline points="4 17 10 11 4 5" />
-                   <line x1="12" y1="19" x2="20" y2="19" />
-                 </svg>
-               )}
-               {cat.title === 'Web & DB' && (
-                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#a78bfa" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" style={{ marginRight:7 }}>
-                   <polygon points="12 2 2 7 12 12 22 7 12 2" />
-                   <polyline points="2 17 12 22 22 17" />
-                   <polyline points="2 12 12 17 22 12" />
-                 </svg>
-               )}
-               {cat.title === 'Tools' && (
-                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#34d399" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" style={{ marginRight:7 }}>
-                   <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z" />
-                 </svg>
-               )}
-               <div style={{ display:'flex', fontSize:10, fontWeight:700, color:cat.color, letterSpacing:'1px' }}>
-                 {cat.title.toUpperCase()}
-               </div>
+             <div style={{ display:'flex', fontSize:10, fontWeight:700, color:cat.color, letterSpacing:'1px', width:95 }}>
+               {cat.title.toUpperCase()}
              </div>
              <div style={{ display:'flex', flexWrap:'wrap', gap:8 }}>
                {cat.items.map(function(item) {
